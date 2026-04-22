@@ -1,0 +1,155 @@
+
+  ███╗   ███╗██╗ █████╗ ██████╗       ██████╗  █████╗ ██████╗  █████╗ ██████╗
+  ████╗ ████║██║██╔══██╗██╔══██╗      ██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔══██╗
+  ██╔████╔██║██║███████║██████╔╝      ██████╔╝███████║██║  ██║███████║██████╔╝
+  ██║╚██╔╝██║██║██╔══██║██╔══██╗      ██╔══██╗██╔══██║██║  ██║██╔══██║██╔══██╗
+  ██║ ╚═╝ ██║██║██║  ██║██████╔╝      ██║  ██║██║  ██║██████╔╝██║  ██║██║  ██║
+  ╚═╝     ╚═╝╚═╝╚═╝  ╚═╝╚═════╝       ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+                                                                    by Anton Babaskin
+
+  Host: box.div-celik.com  IPv4: 37.60.253.99  IPv6: none
+  MIAB: v75  Period: last 24h  Up: up 23 weeks, 5 days, 23 hours, 9 minutes
+  Load: 0.10 0.07 0.06  2026-04-22 13:57:25
+
+
+══ SERVICES ══
+ ✔  Postfix (SMTP): running
+ ✔  Dovecot (IMAP): running
+ ✔  Nginx (Web): running
+ ✔  Fail2ban: running
+ ✔  NSD (DNS): running
+ ✔  OpenDKIM: running
+ ✔  Postgrey: running
+ ✔  SpamPD: running
+ ✔  PHP-FPM: running (php8.0-fpm)
+
+══ BLACKLIST STATUS ══
+ ✔  Spamhaus ZEN (IPv4)
+ ✔  SpamCop     (IPv4)
+ ✔  Barracuda   (IPv4)
+ ✔  SORBS       (IPv4)
+ ✔  Spamhaus DBL (div-celik.com)
+ ✔  Spamhaus DBL (box.div-celik.com)
+
+══ DNS RECORDS ══
+ ✔  PTR (rDNS): box.div-celik.com
+ ✔  SPF: "v=spf1 mx -all"
+ ✔  DKIM: mail._domainkey.div-celik.com
+ ✔  DMARC: "v=DMARC1; p=quarantine; rua=mailto:me@div-celik.com; ruf=mailto:me@div-celik.com; fo=1;"
+ ✔  MTA-STS: configured
+ ✔  DANE/TLSA: configured
+ ✔  MX records:
+     10 box.div-celik.com.
+
+══ TLS CERTIFICATE ══
+ ✔  TLS valid (587/STARTTLS): 72d left — CN = box.div-celik.com
+
+══ DISK SPACE ══
+ ✔  /: 10% used
+ →  Total /home/user-data: 32G
+
+══ MAIL QUEUE ══
+ ✔  Queue is empty
+
+══ BRUTE FORCE — last 24h ══
+ ✔  No brute force attempts found
+
+══ FAIL2BAN ══
+ ✔  postfix-sasl: 0 banned, 0 failed
+ ✔  dovecot: 0 banned, 0 failed
+ ⚠  sshd: 3 banned, 7 failed | 2.57.121.112 45.148.10.152 213.209.159.158
+ ✔  recidive: 0 banned, 4 failed
+
+══ SECURITY HARDENING ══
+ ⚠  SSH: PermitRootLogin yes
+ ⚠  SSH: PasswordAuth yes (default)
+ →  SSH: port 22 (default)
+ ✔  Unattended-upgrades: installed
+ ✘  Postfix: reject_unauth_destination not found!
+ →  Listening ports: 22 25 53 80 143 443 465 587 953 993 995 4190 4949 8891 8893 8952 10023 10025 10026 10222 12340
+
+══ RELAY STATUS ══
+ →  Relay: disabled (direct send)
+
+══ OUTGOING — top senders (all logs) ══
+  Count   From
+  30      maxim.rotanov@div-celik.com
+  9      office@div-celik.com
+  8      finans@div-celik.com
+  3      me@div-celik.com
+  2      muhasebe@div-celik.com
+
+══ OUTGOING — top recipients (all logs) ══
+  Count   To (domain)
+  295      div-celik.com
+  34      mmk.ru
+  20      aveks.com
+  8      box.div-celik.com
+  6      isbank.com.tr
+  4      smetalls.com
+  4      gmail.com
+  3      rentgo.com
+  1      srv1.mail-tester.com
+  1      sezginoto.com
+
+══ BOUNCED / DEFERRED — last 24h ══
+ ✔  Bounced:  0
+ ✘  Deferred: 72
+
+  Top deferred reasons:
+  40  (TLS is required, but was not offered by host mx5.mmk.ru[193.16.209.92])
+  32  (TLS is required, but was not offered by host mx7.mmk.ru[193.16.209.94])
+
+══ REJECTED INCOMING — last 24h ══
+ →  Total rejected: 4
+
+  Top rejection reasons:
+  1  RCPT from unknown[77.83.39.241]: 554 5.7.1 <peterpan510@rocketmail.com>: Relay a
+  1  RCPT from unknown[141.98.9.62]: 554 5.7.1 <spameri@tiscali.it>: Relay access den
+  1  RCPT from unknown[141.98.9.105]: 554 5.7.1 <spameri@tiscali.it>: Relay access de
+  1  RCPT from ns45.tekrom.com[185.13.56.17]: 450 4.2.0 <muhasebe@div-celik.com>: Rec
+
+══ MAILBOXES ══
+
+  div-celik.com (18G)
+    acc  2.6M  (~29 msgs, last: 2026-04-22)
+    coke  1.6G  (~2126 msgs, last: 2026-04-22)
+    desk  2.5M  (~13 msgs, last: 2026-04-22)
+    d.rozenberg  247M  (~145 msgs, last: 2025-04-09)
+    fin  2.5G  (~2364 msgs, last: 2026-04-22)
+    finans  538M  (~1189 msgs, last: 2026-04-22)
+    gsh  697M  (~792 msgs, last: 2026-04-22)
+    info2  680M  (~2892 msgs, last: 2025-04-09)
+    it  12K  (~0 msgs, last: 2026-04-22)
+    kurumsal  220K  (~1 msgs, last: 2026-04-22)
+    logistic  1.5G  (~2263 msgs, last: 2026-04-22)
+    maxim.rotanov  3.5G  (~3942 msgs, last: 2026-04-22)
+    me  1.9G  (~1722 msgs, last: 2026-04-22)
+    mng  1.1G  (~930 msgs, last: 2026-04-22)
+    muhasebe  76M  (~201 msgs, last: 2026-04-22)
+    nomak  12K  (~0 msgs, last: 2026-04-22)
+    office  2.3G  (~3758 msgs, last: 2026-04-22)
+    ops  220M  (~217 msgs, last: 2026-04-22)
+    sales  179M  (~291 msgs, last: 2026-04-22)
+    sr  776M  (~588 msgs, last: 2026-04-22)
+    zr  396M  (~334 msgs, last: 2025-04-09)
+
+══ BACKUP STATUS ══
+ ✔  Last backup: today (13G)
+
+══ RECOMMENDATIONS ══
+
+  1. SSH: set PermitRootLogin prohibit-password in sshd_config
+  2. SSH: set PasswordAuthentication no (use key auth only)
+  3. CRITICAL: Add reject_unauth_destination to smtpd_recipient_restrictions
+  4. Many deferred (72) — check remote server connectivity
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SUMMARY: 32 OK / 3 WARN / 2 FAIL  (37 checks)
+  ⚡ Action required — 2 issue(s) need attention
+  ↑ 4 recommendation(s) — scroll up to ══ RECOMMENDATIONS ══
+
+  miab-radar v3.0 | github.com/Anton-Babaskin/miab-radar | 2026-04-22 13:57
+  by Anton Babaskin — suggestions, bugs? Open an issue on GitHub
+
+root@box:~#
