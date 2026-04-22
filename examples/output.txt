@@ -28,21 +28,21 @@
  ✔  SpamCop     (IPv4)
  ✔  Barracuda   (IPv4)
  ✔  SORBS       (IPv4)
- ✔  Spamhaus DBL (div-celik.com)
- ✔  Spamhaus DBL (box.div-celik.com)
+ ✔  Spamhaus DBL (box.mailserver.com)
+ ✔  Spamhaus DBL (box.mailserver.com)
 
 ══ DNS RECORDS ══
- ✔  PTR (rDNS): box.div-celik.com
+ ✔  PTR (rDNS): box.mailserver.com
  ✔  SPF: "v=spf1 mx -all"
- ✔  DKIM: mail._domainkey.div-celik.com
- ✔  DMARC: "v=DMARC1; p=quarantine; rua=mailto:me@div-celik.com; ruf=mailto:me@div-celik.com; fo=1;"
+ ✔  DKIM: mail._domainkey.box.mailserver.com
+ ✔  DMARC: "v=DMARC1; p=quarantine; rua=mailto:me@mailserver.com; ruf=mailto:mailserver.com; fo=1;"
  ✔  MTA-STS: configured
  ✔  DANE/TLSA: configured
  ✔  MX records:
-     10 box.div-celik.com.
+     10 box.mailserver.com.
 
 ══ TLS CERTIFICATE ══
- ✔  TLS valid (587/STARTTLS): 72d left — CN = box.div-celik.com
+ ✔  TLS valid (587/STARTTLS): 72d left — CN = box.mailserver.com
 
 ══ DISK SPACE ══
  ✔  /: 10% used
@@ -73,32 +73,32 @@
 
 ══ OUTGOING — top senders (all logs) ══
   Count   From
-  30      maxim.rotanov@div-celik.com
-  9      office@div-celik.com
-  8      finans@div-celik.com
-  3      me@div-celik.com
-  2      muhasebe@div-celik.com
+  30     info@mailserver.com
+  9      office@mailserver.com
+  8      finans@mailserver.com
+  3      me@mailserver.com
+  2      tester@mailserver.com
 
 ══ OUTGOING — top recipients (all logs) ══
   Count   To (domain)
-  295      div-celik.com
-  34      mmk.ru
-  20      aveks.com
-  8      box.div-celik.com
-  6      isbank.com.tr
-  4      smetalls.com
-  4      gmail.com
-  3      rentgo.com
+  295      mailserver.com
+  34      google.com
+  20      apple.com
+  8      box.mailserver.com
+  6      yandex.com
+  4      yahoo.com
+  4      protonmail.com
+  3      namecheap.com
   1      srv1.mail-tester.com
-  1      sezginoto.com
+  1      bing.com
 
 ══ BOUNCED / DEFERRED — last 24h ══
  ✔  Bounced:  0
  ✘  Deferred: 72
 
   Top deferred reasons:
-  40  (TLS is required, but was not offered by host mx5.mmk.ru[193.16.209.92])
-  32  (TLS is required, but was not offered by host mx7.mmk.ru[193.16.209.94])
+  40  (TLS is required, but was not offered by host mx5.yahoo.com[168.20.128.92])
+  32  (TLS is required, but was not offered by host mx7.yahoo.com[168.20.128.92])
 
 ══ REJECTED INCOMING — last 24h ══
  →  Total rejected: 4
@@ -107,35 +107,15 @@
   1  RCPT from unknown[77.83.39.241]: 554 5.7.1 <peterpan510@rocketmail.com>: Relay a
   1  RCPT from unknown[141.98.9.62]: 554 5.7.1 <spameri@tiscali.it>: Relay access den
   1  RCPT from unknown[141.98.9.105]: 554 5.7.1 <spameri@tiscali.it>: Relay access de
-  1  RCPT from ns45.tekrom.com[185.13.56.17]: 450 4.2.0 <muhasebe@div-celik.com>: Rec
 
 ══ MAILBOXES ══
 
-  div-celik.com (18G)
-    acc  2.6M  (~29 msgs, last: 2026-04-22)
-    coke  1.6G  (~2126 msgs, last: 2026-04-22)
-    desk  2.5M  (~13 msgs, last: 2026-04-22)
-    d.rozenberg  247M  (~145 msgs, last: 2025-04-09)
-    fin  2.5G  (~2364 msgs, last: 2026-04-22)
-    finans  538M  (~1189 msgs, last: 2026-04-22)
-    gsh  697M  (~792 msgs, last: 2026-04-22)
-    info2  680M  (~2892 msgs, last: 2025-04-09)
-    it  12K  (~0 msgs, last: 2026-04-22)
-    kurumsal  220K  (~1 msgs, last: 2026-04-22)
-    logistic  1.5G  (~2263 msgs, last: 2026-04-22)
-    maxim.rotanov  3.5G  (~3942 msgs, last: 2026-04-22)
-    me  1.9G  (~1722 msgs, last: 2026-04-22)
-    mng  1.1G  (~930 msgs, last: 2026-04-22)
-    muhasebe  76M  (~201 msgs, last: 2026-04-22)
-    nomak  12K  (~0 msgs, last: 2026-04-22)
-    office  2.3G  (~3758 msgs, last: 2026-04-22)
-    ops  220M  (~217 msgs, last: 2026-04-22)
-    sales  179M  (~291 msgs, last: 2026-04-22)
-    sr  776M  (~588 msgs, last: 2026-04-22)
-    zr  396M  (~334 msgs, last: 2025-04-09)
+  mail tester.com(1.6g)
+  office  1.6G  (~2126 msgs, last: 2026-04-22)
+
 
 ══ BACKUP STATUS ══
- ✔  Last backup: today (13G)
+ ✔  Last backup: today (1.6g)
 
 ══ RECOMMENDATIONS ══
 
@@ -152,4 +132,3 @@
   miab-radar v3.0 | github.com/Anton-Babaskin/miab-radar | 2026-04-22 13:57
   by Anton Babaskin — suggestions, bugs? Open an issue on GitHub
 
-root@box:~#
